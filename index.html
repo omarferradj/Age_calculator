@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Age calculator</title>
+</head>
+<body>
+    <div class="main">
+        <div class="inputs-container">
+            <div class="ipt" id="day-container">
+                <label for="day" class="day-label">DAY</label>
+                <input type="number" name="day" id="day" placeholder="DD">
+                <p class="warning day-warning invisible">Must be a valid day</p>
+            </div>
+            <div class="ipt" id="month-container">
+                <label for="month" class="month-label">MONTH</label>
+                <input type="number" name="month" id="month" placeholder="MM">
+                <p class="warning month-warning invisible">Must be a valid month</p>
+            </div>
+            <div class="ipt" id="year-container">
+                <label for="year" class="year-label">YEAR</label>
+                <input type="number" name="year" id="year" placeholder="YY">
+                <p class="warning year-warning invisible">Must be a valid year</p>
+            </div>     
+        </div>
+        <div class="submition">
+            <div class="horizontal-lign"></div>
+            <button id="sub">AGE</button>
+        </div>
+        <div class="outputs-container">
+            <h1><span class="result" id="years">- -</span>years</h1>
+            <h1><span class="result" id="months">- -</span>months</h1>
+            <h1><span class="result" id="days">- -</span>days</h1>
+
+        </div>
+    </div>
+</body>
+<script src="source.js"></script>
+</html>
